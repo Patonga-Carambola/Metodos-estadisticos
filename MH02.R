@@ -46,4 +46,24 @@ boxplot(Petal.Length ~ Species, data=iris_sub,
         col = c("lightblue", "lightgreen"))
 
 
+# Versicolor y setosa -----------------------------------------------------
+Pregunta: Existe uná diferencia signíficatia entre setosa y versicolor
 
+t.test(
+  iris$Petal.Length[iris$Species == "versicolor"],
+  iris$Petal.Length[iris$Species == "setosa"],
+  alternative = "two.sided")
+
+
+cohen.d(
+  iris$Petal.Length[iris$Species == "versicolor"],
+  iris$Petal.Length[iris$Species == "setosa"])
+
+iris_sub2 <- subset(iris, Species %in% c("versicolor", "setosa"))
+
+# Generar el boxplot
+boxplot(Petal.Length ~ Species, data=iris_sub2,
+        main = "Comparación de Petal.Length entre Versicolor y setosa",
+        xlab = "Especie",
+        ylab = "Petal.Length",
+        col = c("lightblue", "lightgreen"))
