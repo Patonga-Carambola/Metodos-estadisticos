@@ -1,3 +1,0 @@
-#Me pican los cocos dou
-
-homero <- c(4, 2, 3, 4, 5, 6, 5, 6, 9)
