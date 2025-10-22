@@ -11,9 +11,9 @@ summary(suelo$Clay2, suelo$wrb1)
 summary(suelo$Clay5, suelo$wrb1)
 
 # Act.2 ----------------------------------------------------------------------
-#P2
+#P2: si existen valores atipicos en Clay1, siendo 3 valores fuera del boxplot
 boxplot(suelo$Clay1, suelo$Clay2, suelo$Clay5)
-#P3: si existen valores atipicos en Clay1, siendo 3 valores fuera del boxplot
+#P3: 
 
 # Act.3 ----------------------------------------------------------------------
 #P4
@@ -25,7 +25,8 @@ median(suelo$Clay1)
 #P5
 cor.test(suelo$Clay1, suelo$Clay5)
 #P6
-#si existe una correlación significativa positiva entre las dos varaibles de 0.8977721 
+#si existe una correlación significativa positiva entre las dos varaibles de 0.8977721,
+#lo cual es cercano al 1
 
 # Act.5 -------------------------------------------------------------------
 #P7
